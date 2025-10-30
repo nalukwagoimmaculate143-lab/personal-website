@@ -1,0 +1,140 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body Background */
+body {
+    background-color: #f7f9fc; /* light professional background */
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #e9f0f7; /* light blue-gray */
+    border-bottom: 2px solid #c8d6e5;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60%; /* square shape */
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+
+}
+
+/* Name Section */
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4a90e2; /* highlight blue */
+}
+
+/* Main Content */
+main {
+    padding: 30px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 1.4rem;
+}
+
+/* Schools Grid */
+.school-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.school-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.school-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Work & Hobbies Sections */
+section p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #e9f0f7;
+    padding: 15px;
+    border-top: 2px solid #c8d6e5;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+}
