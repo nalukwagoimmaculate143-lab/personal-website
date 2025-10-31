@@ -3,53 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>NALUKWAGO IMMACULATE - BLIS Student at COCIS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="profile">
-            <img src="Me.jpg" alt="Your Photo" class="profile-pic">
-            <h1> NALUKWAGO IMMACULATE </>
-			<h1>230014092,23/U/14092/PS BLIS Student at COCIS</h1>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-section">
+                    <div class="profile-photo">
+                        <img src="profile-photo.jpeg" alt="Profile Picture">
+                    </div>
+                    <h1>NALUKWAGO IMMACULATE - BLIS Student at COCIS</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#schools">Schools</a></li>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#work-experience">Work Experience</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#schools">Schools | </a></li>
-                <li><a href="#hobbies">Hobbies | </a></li>
-                <li><a href="#work">Work Experience</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section id="schools">
+    <main class="container">
+        <section id="schools" class="section">
             <h2>Schools Attended</h2>
-            <div class="school-grid">
-                <div class="school-card">2005<br>KISA INFANT SCHOOL</div>
-                <div class="school-card">2019<br>NAMUNGOONA SS</div>
-                <div class="school-card">2022<br>OLD KAMPALA SS</div>
-                
-                <div class="school-card">2023<br>Makerere University</div>
-               
+            <div class="schools-grid">
+                <div class="school-card">
+                    <h3>2005</h3>
+                    <p>KISA INFANT SCHOOL</p>
+                </div>
+                <div class="school-card">
+                    <h3>2019</h3>
+                    <p>NAMUNGOONA SS</p>
+                </div>
+                <div class="school-card">
+                    <h3>2022</h3>
+                    <p>OLD KAMPALA SS</p>
+                </div>
+                <div class="school-card">
+                    <h3>2023</h3>
+                    <p>MAKERERE COLLEGE</p>
+                </div>
+                <div class="school-card">
+                    <h3>2019</h3>
+                    <p>Makerere University </p>
+                </div>
+                <div class="school-card">
+                    <h3>2025</h3>
+                    <p>COCIS BLIS </p>
+                </div>
             </div>
         </section>
 
-        <section id="work">
+        <section id="work-experience" class="section">
             <h2>Work Experience</h2>
-            <p>internship at ministry of finance planning and economic development.</p>
-            <P> Under the resource center as a training information scientist.<p>
-            <P> Volunteered at klassy kids store,savikholdings,nicomart computers.<p>			
+            <div class="work-content">
+                <div class="work-item">
+                    <h3>INTERNSHIP</h3>
+                    <p class="company">MINISTRY OF FINANCE</p>
+                    <p class="duration">Duration: 2025 - 2025</p>
+                    <p class="description">INFORMATION SCIENTIST</p>
+                </div>
+            
+            </div>
         </section>
 
-        <section id="hobbies">
+        <section id="hobbies" class="section">
             <h2>Hobbies</h2>
-            <p>interacting with friends,reading,traveling,listening to music.</p>
+            <div class="hobbies-content">
+                <ul>
+                    <li>listening to music</li>
+                    <li>Interacting with friends</li>
+                    <li>Reading</li>
+                    
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 nalukwagoimmaculate | All Rights Reserved</p>
+        <div class="container">
+            <p>&copy; NALUKWAGO IMMACULATE. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
