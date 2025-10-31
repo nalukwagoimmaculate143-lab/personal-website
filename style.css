@@ -1,140 +1,267 @@
-/* Basic Reset */
+* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Body Background */
 body {
-    background-color: #f7f9fc; /* light professional background */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
 header {
-    text-align: center;
-    padding: 30px 20px;
-    background-color: #e9f0f7; /* light blue-gray */
-    border-bottom: 2px solid #c8d6e5;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #fff;
+    border: 2px solid #333;
+    margin: 20px;
+    padding: 20px;
 }
 
-.profile {
+.header-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.profile-pic {
-    position: absolute;
-    top: 10px;
-    left: 40px;
-    width: 120px;
-    height: 120px;
-    border-radius: 60%; /* square shape */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.profile-photo {
+    border: 2px solid #333;
+    padding: 10px;
+    background-color: #fff;
+    min-width: 120px;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo img {
+    max-width: 100px;
+    max-height: 120px;
     object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-
 }
 
-/* Name Section */
 header h1 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
 
-/* Navigation Menu */
+/* Navigation Styles */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 10px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
-    color: #2c3e50;
-    font-weight: 600;
-    transition: color 0.3s ease;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #4a90e2; /* highlight blue */
+nav ul li a:hover {
+    color: #666;
 }
 
 /* Main Content */
 main {
-    padding: 30px 20px;
+    margin: 20px;
 }
 
-h2 {
-    text-align: center;
+.section {
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 30px;
     margin-bottom: 20px;
-    color: #34495e;
-    font-size: 1.4rem;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
 }
 
 /* Schools Grid */
-.school-grid {
+.schools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    max-width: 900px;
-    margin: 0 auto 50px auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .school-card {
-    background-color: #ffffff;
-    border-radius: 12px;
+    border: 2px solid #333;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.school-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+.school-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-/* Work & Hobbies Sections */
-section p {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
+.school-card p {
     font-size: 1rem;
-    line-height: 1.6;
+}
+
+/* Work Experience Section */
+.work-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.work-item:last-child {
+    border-bottom: none;
+}
+
+.work-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.work-item .company {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.work-item .duration {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.work-item .description {
+    line-height: 1.8;
+}
+
+/* Hobbies Section */
+.hobbies-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hobbies-content ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.hobbies-content ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 /* Footer */
 footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    background-color: #e9f0f7;
-    padding: 15px;
-    border-top: 2px solid #c8d6e5;
-    font-size: 0.9rem;
-    color: #555;
+    padding: 20px;
+    margin: 20px;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-    .profile-pic {
-        width: 120px;
-        height: 120px;
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
     }
 
     nav ul {
         flex-direction: column;
-        gap: 12px;
+        gap: 15px;
+        text-align: center;
     }
 
     header h1 {
         font-size: 1.2rem;
+    }
+
+    .schools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header, main, footer {
+        margin: 10px;
+    }
+
+    .section {
+        padding: 20px 15px;
+    }
+
+    .schools-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Ensure grid adapts to screen width */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .schools-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
